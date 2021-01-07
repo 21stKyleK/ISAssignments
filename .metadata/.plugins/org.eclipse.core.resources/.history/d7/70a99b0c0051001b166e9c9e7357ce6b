@@ -12,7 +12,7 @@ public class BSTreeRunner
    {
  		//add test cases here
  		
- 		BinarySearchTree bruh = new BinarySearchTree();
+ 		
  		
  		
  		

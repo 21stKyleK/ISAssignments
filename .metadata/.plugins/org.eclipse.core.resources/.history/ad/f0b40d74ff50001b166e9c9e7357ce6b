@@ -90,9 +90,9 @@ public class BinarySearchTree
 	}
 	
 	private void reverseOrder(TreeNode tree) {
-		if(tree == null) 
+		if(tree == null) {
 			return;
-		
+		}
 		reverseOrder(tree.getRight());
 		System.out.print(tree.getValue() + "  ");
 		reverseOrder(tree.getLeft());
@@ -115,22 +115,10 @@ public class BinarySearchTree
 	}
 
 
+
 	//add getNumLeaves, getWidth, getHeight, getNumNodes, and isFull
 
-	public int getNumLeaves() {
-		return getNumLeaves(root);
-	}
-	
-	private int getNumLeaves(TreeNode t) {
-		if(t == null) 
-			return 0;
-		
-		if(t.getLeft() == null && t.getRight() == null) {
-			return 1;
-		}else {
-			return getNumLeaves(t.getLeft()) + getNumLeaves(t.getRight());
-		}
-	}
+
 
 
 
