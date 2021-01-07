@@ -14,14 +14,10 @@ public class BSTreeRunner
  		
  		BinarySearchTree bruh = new BinarySearchTree();
  		
- 		for(int i = 0; i < 20; i+=2) {
- 			bruh.add(i);
-			//all values in for loop go to right
- 		}
  		
- 		bruh.inOrder();
- 		bruh.preOrder();
- 		bruh.postOrder();
- 		bruh.reverseOrder();
+ 		
+ 		
+ 		
+ 
    }
 }
