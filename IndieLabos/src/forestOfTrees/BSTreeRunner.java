@@ -31,5 +31,14 @@ public class BSTreeRunner
  		bruh.preOrder();
  		bruh.postOrder();
  		bruh.reverseOrder();
+	   
+	   System.out.println(bruh);
+	   
+	   System.out.println(bruh.getNumNodes());
+	   System.out.println(bruh.getNumLevels());
+	   System.out.println(bruh.isFull());
+	   System.out.println(bruh.getNumLeaves());
+	   System.out.println(bruh.getWidth());
+	   System.out.println(bruh.getHeight());
    }
 }
