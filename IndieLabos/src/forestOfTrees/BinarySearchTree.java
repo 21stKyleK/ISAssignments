@@ -29,8 +29,9 @@ public class BinarySearchTree
 		Comparable treeValue = tree.getValue();
 		int dirTest = val.compareTo(treeValue);
 		
+		//adds values based on previous values, heaps do the sorting
 		
-		if(dirTest <= 0)
+		if(dirTest < 0)
 			tree.setLeft(add(val, tree.getLeft()));
 		else if(dirTest > 0)
 			tree.setRight(add(val, tree.getRight()));
@@ -132,17 +133,45 @@ public class BinarySearchTree
 		}
 	}
 
+	public int getWidth(){
+		return getWidth(root);
+	}
 
+	private int getWidth(TreeNode t){
+		if(t == null){return 0;}
+		//root will be 1
+		//deepest number of leaves (left) + 1 + deepest level of leaves (right)
+		//leaves can be left or right
+		
+		return 1 + getNumLevels(t.getLeft()) + getNumLevels(t.getRight());
+		//thought of this, but thought it wouldn't work
+	}
 
+	public int getHeight(){
+		return getNumLevels(root) - 1;
+	}
 
+	public int getNumNodes(){
+		return getNumNodes(root);
+	}
 
+	private int getNumNodes(TreeNode t){
+		if(t == null)
+			return 0;
+		
+		return 1 + getNumNodes(t.getLeft()) + getNumNodes(t.getRight());
+	}
 
-
-
-
-
-
-
+	public boolean isFull(){
+		//return isFull(root);
+		return (Math.pow(2, getNumLevels() )-1) == getNumNodes();
+	}
+	
+// 	private boolean isFull(TreeNode t){
+// 		if(t == null){ return false;}
+		
+// 		return ( (t.getLeft() == null && t.getRight() == null) || (t.getLeft() != null && t.getRight() != null) ) ;
+// 	}
 	
 	//add extra credit options here - 10 points each
 	
@@ -161,11 +190,14 @@ public class BinarySearchTree
 
 	public String toString()
 	{
-		return "";
+		return "The tree in order: " + toString(root);
 	}
 
 	private String toString(TreeNode tree)
 	{
-		return "";
+		if(tree == null)
+			return "";
+		
+		return toString(tree.getLeft())+ "  " + tree.getValue() + "  " + toString(tree.getRight());
 	}
 }
