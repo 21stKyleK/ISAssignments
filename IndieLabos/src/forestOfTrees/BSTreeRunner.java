@@ -14,7 +14,7 @@ public class BSTreeRunner
  		
  		BinarySearchTree bruh = new BinarySearchTree();
 	   
-	   int[] testVals = {13, 54, 23, 1, 1, -34, 93, 17, 8, 7, -12, 43, 8, 43}
+	   int[] testVals = {13, 54, 23, 1, 1, -34, 93, 17, 8, 7, -12, 43, 8, 43};
  		
 	   /*
  		for(int i = 0; i < 20; i+=2) {

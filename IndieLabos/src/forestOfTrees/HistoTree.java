@@ -1,3 +1,4 @@
+package forestOfTrees;
 //(c) A+ Computer Science
 //www.apluscompsci.com
 
@@ -22,7 +23,7 @@ public class HistoTree
 		if(gotten == null){
 			root = add(data, root);
 		}else{
-			found.setDataCount(found.getDataCount() + 1);
+			gotten.setDataCount(gotten.getDataCount() + 1);
 		}
 	}
 
@@ -35,12 +36,14 @@ public class HistoTree
 		
 // 		if(comparedV==0)
 // 			return tree.setDataCount(tree.getDataCount() + 1);
-		else if(comparedV<0)
+		if(comparedV<0)
 // 			return add(data, tree.getLeft());
-			return tree.setLeft(add(data, tree.getLeft()));
+			tree.setLeft(add(data, tree.getLeft()));
 		else
 // 			return add(data, tree.getRight());
-			return tree.setRight(add(data, tree.getRight()));
+			tree.setRight(add(data, tree.getRight()));
+		
+		return tree;
 	}
 
 	public HistoNode search(Comparable data)
@@ -57,9 +60,9 @@ public class HistoTree
 			if(comparedV==0)
 				return tree;
 			else if(comparedV<0)
-				return search(tree.getLeft());
+				return search(data, tree.getLeft());
 			else
-				return search(tree.getRight());
+				return search(data, tree.getRight());
 		}
 		return null;
 	}
