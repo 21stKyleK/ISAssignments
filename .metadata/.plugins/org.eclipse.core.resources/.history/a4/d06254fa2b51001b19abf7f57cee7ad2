@@ -1,0 +1,26 @@
+package forestOfTrees;
+//(c) A+ Computer Science
+//www.apluscompsci.com
+
+//Name -
+
+import static java.lang.System.*;
+
+public class BSTreeRunner
+{
+   public static void main( String args[] )
+   {
+ 		//add test cases here
+ 		
+ 		BinarySearchTree bruh = new BinarySearchTree();
+ 		
+ 		for(int i = 1; i < 10; i++) {
+ 			bruh.add(i);
+ 		}
+ 		
+ 		bruh.inOrder();
+ 		bruh.preOrder();
+ 		bruh.postOrder();
+ 		bruh.reverseOrder();
+   }
+}
