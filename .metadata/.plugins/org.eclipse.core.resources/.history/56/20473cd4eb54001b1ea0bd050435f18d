@@ -178,7 +178,7 @@ public class GBinarySearchTree<T extends Comparable<T>>
 		if(t == null)
 			return 0;
 		
-		return 1 + numLeaves(t.getLeft()) + getNumLevels(t.getRight());
+		return 1 + getNumLeaves(t.getLeft()) + getNumLevels(t.getRight());
 	}
 	
 	public int height(){
