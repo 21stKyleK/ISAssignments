@@ -22,7 +22,6 @@ public class HeapRunner
 		heap.add(75);
 		heap.add(17);
 		heap.add(5);
-		heap.add(3);
 
 		heap.print();
 		heap.remove();

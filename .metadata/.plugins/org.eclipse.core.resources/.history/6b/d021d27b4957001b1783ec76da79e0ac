@@ -10,13 +10,13 @@ import static java.lang.System.*;
 
 public class HeapSort
 {
-	private List<Integer> list;
-
-	public HeapSort()
-	{
-		list = new ArrayList<Integer>();
-	}
-
+//	private List<Integer> list;
+//
+//	public HeapSort()
+//	{
+//		list = new ArrayList<Integer>();
+//	}
+//
 //   	public void swapUp(int index)
 //   	{
 ////		if(index > 0 
@@ -166,6 +166,13 @@ public class HeapSort
 	public String toString()
 	{
 		return list.toString();
+	}
+	
+	private ArrayList<Integer> list;
+
+	public HeapSort()
+	{
+		list = new ArrayList<Integer>();
 	}
 
    public void swapUp(int index)

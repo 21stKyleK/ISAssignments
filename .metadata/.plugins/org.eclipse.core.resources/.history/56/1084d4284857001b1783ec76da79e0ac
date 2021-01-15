@@ -65,52 +65,6 @@ public class Heap
 		}
 	}
 	
-	/*
-	 * Keep in mind
-	 * 
-	 * public void remove( )
-	{
-		list.set(0,list.get(list.size()-1));
-		list.remove(list.size()-1);
-		swapDown(list.size());
-	}
-
-	public void swapDown(int top)
-	{
-		int root=0;
-		while(root < top)
-		{
-			int max=0;
-		   int left = root * 2 + 1;
-		   int right = root * 2 + 2;
-
-    		if(left < top )
-			{
-				if(right < top )
-				{
-					if (list.get(left) <= list.get(right))
-					{
-						max = right;
-					}
-					else{
-						max = left;
-					}
-				}
-				else
-					max = left;
-			}
-			else break;
-
-			if (list.get(root) < list.get(max))
-			{
-				swap(root, max);
-				root=max;
-			}
-			else break;
-		}
-	}
-	 */
-	
 	private void swap(int start, int finish)
 	{
 		int holdNum = list.get(start);
