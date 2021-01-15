@@ -323,7 +323,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_8osRIFTrEeu63OYiXnqEYA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="HeapSort.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HeapSort.java&quot; partName=&quot;HeapSort.java&quot; title=&quot;HeapSort.java&quot; tooltip=&quot;IndieLabos/src/heapOfFun/HeapSort.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/IndieLabos/src/heapOfFun/HeapSort.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;449&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HeapSort.java&quot; partName=&quot;HeapSort.java&quot; title=&quot;HeapSort.java&quot; tooltip=&quot;IndieLabos/src/heapOfFun/HeapSort.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/IndieLabos/src/heapOfFun/HeapSort.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;339&quot; selectionTopPixel=&quot;1273&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -567,7 +567,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GDFsZityEeunnKm1z8Fjnw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_KYVPwFdDEeuWpcBipMB3Qw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_GDFwxCtyEeunnKm1z8Fjnw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_x55xNldyEeuvCdRglsmJRA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_GDFwxCtyEeunnKm1z8Fjnw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GDFscytyEeunnKm1z8Fjnw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -602,7 +602,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GDFspytyEeunnKm1z8Fjnw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_KYWd5VdDEeuWpcBipMB3Qw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_GDFwZityEeunnKm1z8Fjnw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_x55xQ1dyEeuvCdRglsmJRA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_GDFwZityEeunnKm1z8Fjnw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GDFssityEeunnKm1z8Fjnw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

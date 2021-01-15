@@ -17,35 +17,35 @@ public class HeapSort
 		list = new ArrayList<Integer>();
 	}
 
-   	public void swapUp(int index)
-   	{
-//		if(index > 0 
-////				&& index <= list.size() - 1
-//				){
-//			int rooted = (index-1)/2;
-//			if(list.get(index) < list.get( rooted ) ){
-//				swap(index, rooted);
-//				swapUp(rooted);
+//   	public void swapUp(int index)
+//   	{
+////		if(index > 0 
+//////				&& index <= list.size() - 1
+////				){
+////			int rooted = (index-1)/2;
+////			if(list.get(index) < list.get( rooted ) ){
+////				swap(index, rooted);
+////				swapUp(rooted);
+////			}
+////		}
+//   		
+//   		// /*
+//   		int bot = index;
+//		while(bot>0)
+//		{
+//			int parent = (bot-1)/2;
+//			if(list.get(parent) < list.get(bot))
+//			{
+//				swap(parent, bot);
+//				bot=parent;
+//			}
+//			else{
+//				break;
 //			}
 //		}
-   		
-   		// /*
-   		int bot = index;
-		while(bot>0)
-		{
-			int parent = (bot-1)/2;
-			if(list.get(parent) < list.get(bot))
-			{
-				swap(parent, bot);
-				bot=parent;
-			}
-			else{
-				break;
-			}
-		}
-		
-		// */
-	}
+//		
+//		// */
+//	}
 //
 	public void swapDown(int index)
 	{
@@ -167,4 +167,23 @@ public class HeapSort
 	{
 		return list.toString();
 	}
+
+   public void swapUp(int index)
+   {
+   	int bot = index;
+		while(bot>0)
+		{
+			int parent = (bot-1)/2;
+			if(list.get(parent) < list.get(bot))
+			{
+				swap(parent, bot);
+				bot=parent;
+			}
+			else{
+				break;
+			}
+		}
+	}
+
+	
 }

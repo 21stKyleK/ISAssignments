@@ -17,42 +17,42 @@ public class HeapSort
 		list = new ArrayList<Integer>();
 	}
 
-   	public void swapUp(int index)
-   	{
-//		if(index > 0 
-////				&& index <= list.size() - 1
-//				){
-//			int rooted = (index-1)/2;
-//			if(list.get(index) < list.get( rooted ) ){
-//				swap(index, rooted);
-//				swapUp(rooted);
+//   	public void swapUp(int index)
+//   	{
+////		if(index > 0 
+//////				&& index <= list.size() - 1
+////				){
+////			int rooted = (index-1)/2;
+////			if(list.get(index) < list.get( rooted ) ){
+////				swap(index, rooted);
+////				swapUp(rooted);
+////			}
+////		}
+//   		
+//   		// /*
+//   		int bot = index;
+//		while(bot>0)
+//		{
+//			int parent = (bot-1)/2;
+//			if(list.get(parent) < list.get(bot))
+//			{
+//				swap(parent, bot);
+//				bot=parent;
+//			}
+//			else{
+//				break;
 //			}
 //		}
-   		
-   		// /*
-   		int bot = index;
-		while(bot>0)
-		{
-			int parent = (bot-1)/2;
-			if(list.get(parent) < list.get(bot))
-			{
-				swap(parent, bot);
-				bot=parent;
-			}
-			else{
-				break;
-			}
-		}
-		
-		// */
-	}
+//		
+//		// */
+//	}
 //
 	public void swapDown(int index)
 	{
-//		int rooted = 0;
-//		while(rooted < index) {
-//			
-//		int child1 = (rooted * 2) + 1, child2 = (rooted * 2) + 2;
+		int rooted = 0;
+		while(rooted < index) {
+			
+		int child1 = (rooted * 2) + 1, child2 = (rooted * 2) + 2;
 //			int child1 = (index * 2) + 1, child2 = (index * 2) + 2;
 //		
 //		if(child1 <= list.size() -1){
@@ -69,36 +69,36 @@ public class HeapSort
 //			}
 //		}
 		
-//		if(child1 < index) {
-//			if(child2 < index) {
-//				if(list.get(rooted) <= list.get(child2) ) {
-//					swap(rooted, child2);
-//					rooted = child2;
-//				}
-//				else if(list.get(rooted) <= list.get(child1) ){
-//					swap(rooted, child1);
-//					rooted = child1;
-//				}
-//				else {
-//					break;
-//				}
-//				
-//			}
-//			else if(list.get(rooted) <= list.get(child1) ){
-//				swap(rooted, child1);
-//				rooted = child1;
-//			}
-//			else {
-//				break;
-//			}
-//		
-//		}else {
-//			break;
-//		}
-//		
-//		}
+		if(child1 < index) {
+			if(child2 < index) {
+				if(list.get(rooted) <= list.get(child2) ) {
+					swap(rooted, child2);
+					rooted = child2;
+				}
+				else if(list.get(rooted) <= list.get(child1) ){
+					swap(rooted, child1);
+					rooted = child1;
+				}
+				else {
+					break;
+				}
+				
+			}
+			else if(list.get(rooted) <= list.get(child1) ){
+				swap(rooted, child1);
+				rooted = child1;
+			}
+			else {
+				break;
+			}
 		
-		///*
+		}else {
+			break;
+		}
+		
+		}
+		
+		/*
 		int root=0;
 		while(root<index)
 		{
@@ -130,7 +130,7 @@ public class HeapSort
 			}
 			else break;
 		}
-		//*/
+		*/
 	}
 
    public void heapSort(int[] nums)
@@ -167,4 +167,23 @@ public class HeapSort
 	{
 		return list.toString();
 	}
+
+   public void swapUp(int index)
+   {
+   	int bot = index;
+		while(bot>0)
+		{
+			int parent = (bot-1)/2;
+			if(list.get(parent) < list.get(bot))
+			{
+				swap(parent, bot);
+				bot=parent;
+			}
+			else{
+				break;
+			}
+		}
+	}
+
+	
 }
