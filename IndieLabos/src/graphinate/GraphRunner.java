@@ -17,7 +17,17 @@ public class GraphRunner
 		file.nextLine();
 		for(int x=0; x<howManyTimes; x++)
 		{
-			//add code here
+			String input = file.nextLine();
+			Graph test = new Graph(input);
+
+			input=file.nextLine();
+			String start = input.charAt(0)+"";
+			String stop = input.charAt(1)+"";
+
+			if(test.contains(start)&&test.contains(stop))
+			   test.check(input.substring(0,1),input.substring(1,2),"");
+
+			out.println(start + " CONNECTS TO " + stop + " == " + test);
 		}
 	}
 }
