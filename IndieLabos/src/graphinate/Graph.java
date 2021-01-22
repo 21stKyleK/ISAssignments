@@ -1,3 +1,4 @@
+package graphinate;
 //(c) A+ Computer Science
 //www.apluscompsci.com
 
@@ -16,7 +17,7 @@ public class Graph
 		map = new TreeMap<String, String>();
 		String[] bruh = line.split(" ");
 		for(String j : bruh){
-			String a = j.charAt(0), b = j.charAt(1);
+			String a = j.charAt(0) + "", b = j.charAt(1) + "";
 			if(map.get(a) == null){
 				map.put(a, "");
 			}
@@ -40,7 +41,10 @@ public class Graph
 
 	public void check(String first, String second, String placesUsed)
 	{
-		if(map.get(first).indexOf(second) != -1 || fist.equals(second)){
+		if(placesUsed.indexOf(first) != -1) {
+			return;
+		}
+		if(map.get(first).indexOf(second) != -1 || first.equals(second)){
 			found = true;
 			return;
 		}
@@ -67,8 +71,9 @@ public class Graph
 
 	public String toString()
 	{
-		if(found){
-			return "CONNECTS";
-		} return "DOESN'T";
+//		if(found){
+//			return "CONNECTS";
+//		} return "DOESN'T";
+		return found + "";
 	}
 }

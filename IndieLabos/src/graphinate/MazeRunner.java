@@ -1,3 +1,4 @@
+package graphinate;
 //(c) A+ Computer Science
 //www.apluscompsci.com
 
@@ -8,7 +9,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import static java.lang.System.*;
 
-public class Lab10d
+public class MazeRunner
 {
 	public static void main( String args[] ) throws IOException
 	{

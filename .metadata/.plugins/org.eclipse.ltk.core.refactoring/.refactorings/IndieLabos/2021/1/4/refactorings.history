@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;bidgraph.dat, graph1.dat, graph2.dat, maze.dat, maze2.dat&apos; to &apos;IndieLabos&apos;" description="Move 5 resources to &apos;IndieLabos&apos;" destination="/IndieLabos" element1="src/graphinate/bidgraph.dat" element2="src/graphinate/graph1.dat" element3="src/graphinate/graph2.dat" element4="src/graphinate/maze.dat" element5="src/graphinate/maze2.dat" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="5" stamp="1611328275680" updateReferences="true"/>
+</session>
