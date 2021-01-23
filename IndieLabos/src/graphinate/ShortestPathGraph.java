@@ -57,6 +57,18 @@ public class ShortestPathGraph
 				check(j, second, placesUsed+first, steps + 1);
 			}
 		}
+		/*
+		if(first.equals(second) && shortest > steps){
+			found = true;
+			shortest = steps;
+		}
+		*/
+		/*
+		String conList = map.get(first);
+			for(int i=0; i<conList.length(); i++)
+				if(placesUsed.indexOf(conList.substring(i,i+1))<0)
+					check(conList.substring(i,i+1), second, placesUsed+first, steps+1);
+		*/
 	}
 
 	public String toString()
