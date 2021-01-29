@@ -14,15 +14,35 @@ public class ShortestPathMaze
 
 	public ShortestPathMaze()
 	{
+		this({{1, 0, 0, 0, 1},
+			{1, 1, 1, 1, 0},
+			{1, 0, 1, 0, 1},
+			{1, 1, 1, 1, 1},
+			{1, 0, 0, 1, 1}});
 	}
 
 	public ShortestPathMaze(int[][] m)
 	{
+		maze = m;
+		shortest = Integer.MAX_VALUE;
 	}
 
 
 	public void checkForExitPath(int r, int c, int path)
 	{
+		if(path < shortest && r >= 0 && r < maze.length && c >= 0 && c < maze[r].length && maze[r][c] == 1){
+			if(c >= maze[r].length){
+				shortest = path;
+			}
+			else{
+				maze[r][c] = 2;
+				checkForExitPath(r, c + 1, path + 1);
+				checkForExitPath(r, c - 1, path + 1);
+				checkForExitPath(r + 1, c, path + 1);
+				checkForExitPath(r - 1, c, path + 1);
+				maze[r][c] = 1;
+			}
+		}
 	}
 	
 	public int getShortestPath()
@@ -33,6 +53,14 @@ public class ShortestPathMaze
 	public String toString()
 	{
 		String output="";
+		for(int r= 0; r<maze.length; r++)
+		{
+			for(int c =0; c<maze[r].length; c++)
+			{
+				output+=maze[r][c]+" ";
+			}
+			output+="\n";
+		}
 		return output;
 	}
 }
