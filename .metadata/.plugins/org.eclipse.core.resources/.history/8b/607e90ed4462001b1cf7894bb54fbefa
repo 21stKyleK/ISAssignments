@@ -18,9 +18,9 @@ public class MazeRunner
 			int size = arg.nextInt();
 			int[][] bruh = new int[size][size];
 			
-			for(int r= 0; r < size; r++)
+			for(int r= 0; r < rc; r++)
 			{
-				for(int c =0; c < size; c++)
+				for(int c =0; c < rc; c++)
 				{
 					bruh[r][c]=arg.nextInt();
 				}

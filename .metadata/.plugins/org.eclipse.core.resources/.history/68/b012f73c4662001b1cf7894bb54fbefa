@@ -27,7 +27,7 @@ public class ShortestPathMaze
 	public void checkForExitPath(int r, int c, int path)
 	{
 		if(path < shortest && r >= 0 && r < maze.length && c >= 0  && maze[r][c] == 1){
-			if(c >= maze[r].length-1){
+			if(c >= maze[r].length){
 				shortest = path;
 			}
 			else{

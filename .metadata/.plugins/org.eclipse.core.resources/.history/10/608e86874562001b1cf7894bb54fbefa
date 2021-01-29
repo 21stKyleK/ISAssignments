@@ -17,12 +17,11 @@ public class BiDirectionalGraphRunner
 		Scanner arg = new Scanner(new File("./bidgraph.dat"));
 		
 		int cases = arg.nextInt();
-		arg.nextLine();
 		
 		while(cases --> 0){
 			BiDirectionalGraph yee = new BiDirectionalGraph(arg.nextLine());
 			
-			String[] bef = arg.nextLine().split(" ");
+			String[] bef = arg.nextLine().split[" "];
 			
 			if(yee.contains(bef[0]) && yee.contains(bef[1]))
 				yee.check(bef[0], bef[1], new TreeSet<String>());

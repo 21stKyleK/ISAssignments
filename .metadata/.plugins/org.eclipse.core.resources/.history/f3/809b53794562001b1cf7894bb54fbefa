@@ -22,7 +22,7 @@ public class BiDirectionalGraph
 	{
 		map = new TreeMap<String, TreeSet<String> >();
 		found = false;
-		String[] bruh = line.split(" ");
+		String[] bruh = line.split[" "];
 		
 		for(int i = 0; i<bruh.length; i += 2){
 			String a = bruh[i], b = bruh[i+1];
@@ -33,11 +33,8 @@ public class BiDirectionalGraph
 				map.put(b, new TreeSet<String>());
 			}
 			
-//			map.put(a, map.get(a).add(b));
-//			map.put(b, map.get(b).add(a));
-			
-			map.get(a).add(b);
-			map.get(b).add(a);
+			map.put(a, map.get(a).add(b));
+			map.put(b, map.get(b).add(a));
 		}
 	}
 
@@ -52,12 +49,11 @@ public class BiDirectionalGraph
 		if(first.equals(second)){
 			found = true;
 		}else{
-			for(String j : map.get(first)){
-				//if(placedUsed.get(j) == null){
-				if(placedUsed.contains(j) == false) {
-					placedUsed.add(j);
+			for(String j : map.get(a)){
+				if(placedUsed.get(j) == null){
+					placedUsed.add(j)
 					check(j, second, placedUsed);
-					placedUsed.remove(j);
+					placedUsed.remove(j)
 				}
 			}
 		}

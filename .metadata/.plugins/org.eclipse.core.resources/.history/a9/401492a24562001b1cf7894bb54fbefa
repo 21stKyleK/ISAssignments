@@ -17,7 +17,6 @@ public class BiDirectionalGraphRunner
 		Scanner arg = new Scanner(new File("./bidgraph.dat"));
 		
 		int cases = arg.nextInt();
-		arg.nextLine();
 		
 		while(cases --> 0){
 			BiDirectionalGraph yee = new BiDirectionalGraph(arg.nextLine());
